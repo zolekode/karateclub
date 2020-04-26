@@ -1,8 +1,9 @@
 import numpy as np
 import networkx as nx
 from gensim.models.word2vec import Word2Vec
-from karateclub.utils.diffuser import EulerianDiffuser
-from karateclub.estimator import Estimator
+from karateclub.karateclub.utils.diffuser import EulerianDiffuser
+from karateclub.karateclub.estimator import Estimator
+
 
 class Diff2Vec(Estimator):
     r"""An implementation of `"Diff2Vec" <http://homepages.inf.ed.ac.uk/s1668259/papers/sequence.pdf>`_
@@ -21,9 +22,9 @@ class Diff2Vec(Estimator):
         learning_rate (float): HogWild! learning rate. Default is 0.05.
         min_count (int): Minimal count of node occurences. Default is 1.
     """
+
     def __init__(self, diffusion_number=10, diffusion_cover=80, dimensions=128, workers=4,
                  window_size=5, epochs=1, learning_rate=0.05, min_count=1):
-
         self.diffusion_number = diffusion_number
         self.diffusion_cover = diffusion_cover
         self.dimensions = dimensions
@@ -32,6 +33,7 @@ class Diff2Vec(Estimator):
         self.epochs = epochs
         self.learning_rate = learning_rate
         self.min_count = min_count
+        self.__diffusions = None
 
     def fit(self, graph):
         """
@@ -43,6 +45,8 @@ class Diff2Vec(Estimator):
         self._check_graph(graph)
         diffuser = EulerianDiffuser(self.diffusion_number, self.diffusion_cover)
         diffuser.do_diffusions(graph)
+
+        self.__diffusions = diffuser.diffusions.copy()
 
         model = Word2Vec(diffuser.diffusions,
                          hs=1,
@@ -56,7 +60,6 @@ class Diff2Vec(Estimator):
         num_of_nodes = graph.number_of_nodes()
         self._embedding = [model[str(n)] for n in range(num_of_nodes)]
 
-
     def get_embedding(self):
         r"""Getting the node embedding.
 
@@ -64,3 +67,6 @@ class Diff2Vec(Estimator):
             * **embedding** *(Numpy array)* - The embedding of nodes.
         """
         return np.array(self._embedding)
+
+    def get_diffusions(self):
+        return np.array(self.__diffusions)
