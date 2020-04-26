@@ -1,6 +1,6 @@
 import random
 import networkx as nx
-from karateclub.estimator import Estimator
+from karateclub.karateclub.estimator import Estimator
 
 class LabelPropagation(Estimator):
     r"""An implementation of `"Label Propagation Clustering" <https://arxiv.org/abs/0709.2938>`_

@@ -3,7 +3,7 @@ import numpy as np
 import networkx as nx
 import scipy.stats.mstats
 import scipy.sparse as sparse
-from karateclub.estimator import Estimator
+from karateclub.karateclub.estimator import Estimator
 
 class GeoScattering(Estimator):
     r"""An implementation of `"GeoScattering" <http://proceedings.mlr.press/v97/gao19e.html>`_

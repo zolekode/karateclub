@@ -1,7 +1,7 @@
 import numpy as np
 import networkx as nx
 from scipy import sparse
-from karateclub.estimator import Estimator
+from karateclub.karateclub.estimator import Estimator
 
 class SymmNMF(Estimator):
 

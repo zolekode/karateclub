@@ -1,6 +1,6 @@
 import community
 import networkx as nx
-from karateclub.estimator import Estimator
+from karateclub.karateclub.estimator import Estimator
 
 class EdMot(Estimator):
     r"""An implementation of `"Edge Motif Clustering" <https://arxiv.org/abs/1906.04560>`_

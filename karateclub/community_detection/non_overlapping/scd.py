@@ -1,5 +1,5 @@
 import networkx as nx
-from karateclub.estimator import Estimator
+from karateclub.karateclub.estimator import Estimator
 
 class SCD(Estimator):
     r"""An implementation of `"SCD" <http://wwwconference.org/proceedings/www2014/proceedings/p225.pdf>`_ from the

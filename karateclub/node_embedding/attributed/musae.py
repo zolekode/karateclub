@@ -3,7 +3,7 @@ import numpy as np
 import networkx as nx
 from karateclub.estimator import Estimator
 from gensim.models.doc2vec import TaggedDocument, Doc2Vec
-from karateclub.utils.walker import RandomWalker
+from karateclub.karateclub.utils.walker import RandomWalker
 
 class MUSAE(Estimator):
     r"""An implementation of `"MUSAE" <https://arxiv.org/abs/1909.13021>`_

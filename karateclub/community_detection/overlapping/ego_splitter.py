@@ -1,6 +1,6 @@
 import community
 import networkx as nx
-from karateclub.estimator import Estimator
+from karateclub.karateclub.estimator import Estimator
 
 class EgoNetSplitter(Estimator):
     r"""An implementation of `"Ego-Splitting" <https://www.eecs.yorku.ca/course_archive/2017-18/F/6412/reading/kdd17p145.pdf>`_

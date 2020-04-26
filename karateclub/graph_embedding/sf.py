@@ -1,7 +1,7 @@
 import numpy as np
 import networkx as nx
 from scipy.sparse.linalg import eigsh
-from karateclub.estimator import Estimator
+from karateclub.karateclub.estimator import Estimator
 
 class SF(Estimator):
     r"""An implementation of `"SF" <A Simple Baseline Algorithm for Graph Classification>`_

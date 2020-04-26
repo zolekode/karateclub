@@ -1,6 +1,6 @@
 import numpy as np
 import networkx as nx
-from karateclub.estimator import Estimator
+from karateclub.karateclub.estimator import Estimator
 
 class FGSD(Estimator):
     r"""An implementation of `"FGSD" <https://papers.nips.cc/paper/6614-hunt-for-the-unique-stable-sparse-and-fast-feature-learning-on-graphs>`_

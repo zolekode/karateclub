@@ -2,7 +2,7 @@ import random
 import community
 import numpy as np
 import networkx as nx
-from karateclub.estimator import Estimator
+from karateclub.karateclub.estimator import Estimator
 
 class BigClam(Estimator):
     r"""An implementation of `"BigClam" <http://infolab.stanford.edu/~crucis/pubs/paper-nmfagm.pdf>`_

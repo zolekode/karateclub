@@ -3,7 +3,7 @@ import numpy as np
 import networkx as nx
 from karateclub.estimator import Estimator
 from gensim.models.word2vec import Word2Vec
-from karateclub.utils.walker import RandomWalker
+from karateclub.karateclub.utils.walker import RandomWalker
 
 class SINE(Estimator):
     r"""An implementation of `"SINE" <https://arxiv.org/pdf/1810.06768.pdf>`_

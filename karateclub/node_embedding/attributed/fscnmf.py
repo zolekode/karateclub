@@ -2,7 +2,7 @@ import numpy as np
 import networkx as nx
 from scipy import sparse
 from numpy.linalg import inv
-from karateclub.estimator import Estimator
+from karateclub.karateclub.estimator import Estimator
 
 class FSCNMF(Estimator):
     r"""An implementation of `"FCNMF" <https://arxiv.org/pdf/1804.05313.pdf.>`_

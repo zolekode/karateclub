@@ -2,7 +2,7 @@ import numpy as np
 import networkx as nx
 from numpy.linalg import inv
 from sklearn.decomposition import TruncatedSVD
-from karateclub.estimator import Estimator
+from karateclub.karateclub.estimator import Estimator
 
 class BANE(Estimator):
     r"""An implementation of `"BANE" <https://shiruipan.github.io/publication/yang-binarized-2018/yang-binarized-2018.pdf>`_

@@ -1,7 +1,7 @@
 import numpy as np
 import networkx as nx
 from sklearn.decomposition import NMF
-from karateclub.estimator import Estimator
+from karateclub.karateclub.estimator import Estimator
 
 class DANMF(Estimator):
     r"""An implementation of `"DANMF" <https://smartyfh.com/Documents/18DANMF.pdf>`_

@@ -1,7 +1,7 @@
 import numpy as np
 import networkx as nx
 import scipy.sparse as sps
-from karateclub.estimator import Estimator
+from karateclub.karateclub.estimator import Estimator
 
 class NetLSD(Estimator):
     r"""An implementation of `"NetLSD" <https://arxiv.org/abs/1805.10712>`_

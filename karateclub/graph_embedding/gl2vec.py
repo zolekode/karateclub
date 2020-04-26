@@ -2,7 +2,7 @@ import numpy as np
 import networkx as nx
 from karateclub.estimator import Estimator
 from gensim.models.doc2vec import Doc2Vec, TaggedDocument
-from karateclub.utils.treefeatures import WeisfeilerLehmanHashing
+from karateclub.karateclub.utils.treefeatures import WeisfeilerLehmanHashing
 
 class GL2Vec(Estimator):
     r"""An implementation of `"GL2Vec" <https://link.springer.com/chapter/10.1007/978-3-030-36718-3_1>`_

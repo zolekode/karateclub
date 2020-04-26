@@ -7,14 +7,14 @@ import community
 import numpy as np
 from scipy.sparse import coo_matrix
 
-from karateclub.node_embedding.neighbourhood import GraRep, DeepWalk, Walklets, NMFADMM, Diff2Vec, BoostNE, NetMF, LaplacianEigenmaps, HOPE, NodeSketch
-from karateclub.community_detection.overlapping import EgoNetSplitter, NNSED, DANMF, MNMF, BigClam, SymmNMF
-from karateclub.community_detection.non_overlapping import EdMot, LabelPropagation, SCD, GEMSEC
-from karateclub.graph_embedding import Graph2Vec, FGSD, GL2Vec, SF, NetLSD, GeoScattering
-from karateclub.node_embedding.attributed import BANE, TENE, TADW, FSCNMF, SINE, MUSAE
-from karateclub.node_embedding.structural import GraphWave, Role2Vec
-from karateclub.node_embedding.meta import NEU
-from karateclub.dataset import GraphReader, GraphSetReader
+from karateclub.karateclub.node_embedding.neighbourhood import GraRep, DeepWalk, Walklets, NMFADMM, Diff2Vec, BoostNE, NetMF, LaplacianEigenmaps, HOPE, NodeSketch
+from karateclub.karateclub.community_detection.overlapping import EgoNetSplitter, NNSED, DANMF, MNMF, BigClam, SymmNMF
+from karateclub.karateclub.community_detection.non_overlapping import EdMot, LabelPropagation, SCD, GEMSEC
+from karateclub.karateclub.graph_embedding import Graph2Vec, FGSD, GL2Vec, SF, NetLSD, GeoScattering
+from karateclub.karateclub.node_embedding.attributed import BANE, TENE, TADW, FSCNMF, SINE, MUSAE
+from karateclub.karateclub.node_embedding.structural import GraphWave, Role2Vec
+from karateclub.karateclub.node_embedding.meta import NEU
+from karateclub.karateclub.dataset import GraphReader, GraphSetReader
 
 #----------------
 # GEMSEC example

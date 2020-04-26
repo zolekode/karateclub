@@ -1,8 +1,8 @@
 import random
 import numpy as np
 import networkx as nx
-from karateclub.utils.walker import RandomWalker
-from karateclub.estimator import Estimator
+from karateclub.karateclub.utils.walker import RandomWalker
+from karateclub.karateclub.estimator import Estimator
 
 class GEMSEC(Estimator):
     r"""An implementation of `"GEMSEC" <https://arxiv.org/abs/1802.03997>`_
