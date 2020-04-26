@@ -4,7 +4,7 @@ import numpy as np
 import networkx as nx
 from scipy import sparse
 from sklearn.decomposition import NMF
-from karateclub.estimator import Estimator
+from karateclub.karateclub.estimator import Estimator
 
 class BoostNE(Estimator):
     r"""An implementation of `"BoostNE" <https://arxiv.org/abs/1808.08627>`_

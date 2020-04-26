@@ -1,7 +1,7 @@
 import pygsp
 import numpy as np
 import networkx as nx
-from karateclub.estimator import Estimator
+from karateclub.karateclub.estimator import Estimator
 
 class GraphWave(Estimator):
     r"""An implementation of `"GraphWave" <https://dl.acm.org/citation.cfm?id=2806512>`_

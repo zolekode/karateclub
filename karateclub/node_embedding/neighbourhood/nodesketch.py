@@ -1,7 +1,7 @@
 import networkx as nx
 import numpy as np
 from collections import Counter
-from karateclub.estimator import Estimator
+from karateclub.karateclub.estimator import Estimator
 
 class NodeSketch(Estimator):
     r"""An implementation of `"NodeSketch" <https://exascale.info/assets/pdf/yang2019nodesketch.pdf>`_

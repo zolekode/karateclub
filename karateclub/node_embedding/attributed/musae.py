@@ -1,7 +1,7 @@
 import random
 import numpy as np
 import networkx as nx
-from karateclub.estimator import Estimator
+from karateclub.karateclub.estimator import Estimator
 from gensim.models.doc2vec import TaggedDocument, Doc2Vec
 from karateclub.karateclub.utils.walker import RandomWalker
 

@@ -1,7 +1,7 @@
 import numpy as np
 import networkx as nx
 import scipy.sparse as sps
-from karateclub.estimator import Estimator
+from karateclub.karateclub.estimator import Estimator
 
 class HOPE(Estimator):
     r"""An implementation of `"HOPE" <https://www.kdd.org/kdd2016/papers/files/rfp0184-ouA.pdf>`_

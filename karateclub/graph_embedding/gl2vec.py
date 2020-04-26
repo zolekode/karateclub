@@ -1,6 +1,6 @@
 import numpy as np
 import networkx as nx
-from karateclub.estimator import Estimator
+from karateclub.karateclub.estimator import Estimator
 from gensim.models.doc2vec import Doc2Vec, TaggedDocument
 from karateclub.karateclub.utils.treefeatures import WeisfeilerLehmanHashing
 

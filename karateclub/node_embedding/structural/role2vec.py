@@ -1,9 +1,9 @@
 import numpy as np
 import networkx as nx
 from gensim.models.doc2vec import Doc2Vec, TaggedDocument
-from karateclub.utils.walker import RandomWalker
-from karateclub.estimator import Estimator
-from karateclub.utils.treefeatures import WeisfeilerLehmanHashing
+from karateclub.karateclub.utils.walker import RandomWalker
+from karateclub.karateclub.estimator import Estimator
+from karateclub.karateclub.utils.treefeatures import WeisfeilerLehmanHashing
 
 class Role2Vec(Estimator):
     r"""An implementation of `"Role2vec" <https://arxiv.org/abs/1802.02896>`_

@@ -3,7 +3,7 @@ import numpy as np
 import networkx as nx
 from scipy import sparse
 from sklearn.decomposition import TruncatedSVD
-from karateclub.estimator import Estimator
+from karateclub.karateclub.estimator import Estimator
 
 class GraRep(Estimator):
     r"""An implementation of `"GraRep" <https://dl.acm.org/citation.cfm?id=2806512>`_

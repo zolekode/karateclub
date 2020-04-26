@@ -1,7 +1,7 @@
 import numpy as np
 import networkx as nx
 from sklearn.preprocessing import normalize
-from karateclub.estimator import Estimator
+from karateclub.karateclub.estimator import Estimator
 
 class NEU(Estimator):
     r"""An implementation of `"NEU" <https://www.ijcai.org/Proceedings/2017/0544.pdf>`_

@@ -2,7 +2,7 @@ import numpy as np
 import networkx as nx
 from scipy import sparse
 from sklearn.decomposition import TruncatedSVD
-from karateclub.estimator import Estimator
+from karateclub.karateclub.estimator import Estimator
 
 class NetMF(Estimator):
     r"""An implementation of `"NetMF" <https://keg.cs.tsinghua.edu.cn/jietang/publications/WSDM18-Qiu-et-al-NetMF-network-embedding.pdf>`_

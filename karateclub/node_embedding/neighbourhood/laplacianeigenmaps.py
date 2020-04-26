@@ -1,7 +1,7 @@
 import numpy as np
 import networkx as nx
 import scipy.sparse as sps
-from karateclub.estimator import Estimator
+from karateclub.karateclub.estimator import Estimator
 
 class LaplacianEigenmaps(Estimator):
     r"""An implementation of `"Laplacian Eigenmaps" <https://papers.nips.cc/paper/1961-laplacian-eigenmaps-and-spectral-techniques-for-embedding-and-clustering>`_

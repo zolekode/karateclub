@@ -1,8 +1,8 @@
 import numpy as np
 import networkx as nx
 from gensim.models.word2vec import Word2Vec
-from karateclub.utils.walker import RandomWalker
-from karateclub.estimator import Estimator
+from karateclub.karateclub.utils.walker import RandomWalker
+from karateclub.karateclub.estimator import Estimator
 
 class Walklets(Estimator):
     r"""An implementation of `"Walklets" <https://arxiv.org/abs/1605.02115>`_
