@@ -69,4 +69,4 @@ class Diff2Vec(Estimator):
         return np.array(self._embedding)
 
     def get_diffusions(self):
-        return np.array(self.__diffusions)
+        return self.__diffusions
